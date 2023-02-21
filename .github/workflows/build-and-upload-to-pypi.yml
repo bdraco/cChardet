@@ -44,7 +44,6 @@ jobs:
 
   build_sdist:
     name: Build source distribution
-    if: github.event_name == 'release' && github.event.action == 'created'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
